@@ -5,6 +5,19 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatlandersGemStore", "FlatlandersGemStore\FlatlandersGemStore.csproj", "{6E33205C-1A4A-4B7D-92D7-46447B36A055}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{40B3520C-48D8-42B1-8A6C-DDB25512A3C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{00EF7554-F662-4500-8DE5-56B2B1E4C1AA}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{6417AFE0-59C2-4109-B9DC-4B31E2EE0EFC}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\FlatlandersGemStore.json = PublishScripts\Templates\FlatlandersGemStore.json
+		PublishScripts\Templates\FlatlandersGemStore.param.dev.json = PublishScripts\Templates\FlatlandersGemStore.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00EF7554-F662-4500-8DE5-56B2B1E4C1AA} = {40B3520C-48D8-42B1-8A6C-DDB25512A3C4}
+		{6417AFE0-59C2-4109-B9DC-4B31E2EE0EFC} = {40B3520C-48D8-42B1-8A6C-DDB25512A3C4}
 	EndGlobalSection
 EndGlobal
