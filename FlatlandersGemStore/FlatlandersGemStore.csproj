@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -111,6 +112,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\styles.css" />
+    <Content Include="images\gem-01.gif" />
+    <Content Include="images\gem-02.gif" />
+    <Content Include="images\gem-03.gif" />
+    <Content Include="images\gem-04.gif" />
+    <Content Include="images\gem-05.gif" />
+    <Content Include="images\gem-06.gif" />
+    <Content Include="images\gem-07.gif" />
+    <Content Include="images\gem-08.gif" />
+    <Content Include="images\gem-09.gif" />
+    <Content Include="images\gem-10.gif" />
+    <Content Include="product-description.html" />
+    <Content Include="product-gallery.html" />
+    <Content Include="product-reviews.html" />
+    <Content Include="product-specs.html" />
+    <Content Include="product-tabs.html" />
     <Content Include="Scripts\app.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -137,7 +153,9 @@
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\_references.js" />
+    <Content Include="Scripts\products.js" />
     <Content Include="Web.config" />
+    <Content Include="store-products.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
